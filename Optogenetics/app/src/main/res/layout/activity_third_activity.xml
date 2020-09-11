@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".third_activity">
+
+    <TextView
+        android:id="@+id/color_txtView7"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="B"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/color_txtView6"
+        app:layout_constraintTop_toBottomOf="@+id/color_B_txtView" />
+
+    <TextView
+        android:id="@+id/color_txtView5"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="R"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/color_txtView"
+        app:layout_constraintTop_toBottomOf="@+id/color_R_txtView" />
+
+    <TextView
+        android:id="@+id/color_txtView6"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="G"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/color_txtView5"
+        app:layout_constraintTop_toBottomOf="@+id/color_G_txtView" />
+
+
+    <TextView
+        android:id="@+id/color_txtView4"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/black"
+        android:text="(0-255)"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/color_txtView5"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color_txtView" />
+
+    <EditText
+        android:id="@+id/color_G_txtView"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/color_R_txtView"
+        app:layout_constraintTop_toBottomOf="@+id/color_secs_editText" />
+
+    <EditText
+        android:id="@+id/color_B_txtView"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/color_G_txtView"
+        app:layout_constraintTop_toBottomOf="@+id/color_secs_editText" />
+
+    <TextView
+        android:id="@+id/color_txtView"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/black"
+        android:text="Colour 1:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_color_txtView" />
+
+    <EditText
+        android:id="@+id/color_msecs_editText"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/color_secs_txtView"
+        app:layout_constraintTop_toBottomOf="@+id/black_msecs_editText" />
+
+    <TextView
+        android:id="@+id/time_color_txtView"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        android:text="Time Colour 1:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_black_txtView" />
+
+    <EditText
+        android:id="@+id/color_secs_editText"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/time_color_txtView"
+        app:layout_constraintTop_toBottomOf="@+id/black_secs_editText" />
+
+    <EditText
+        android:id="@+id/color_R_txtView"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/color_txtView"
+        app:layout_constraintTop_toBottomOf="@+id/color_secs_editText" />
+
+    <TextView
+        android:id="@+id/color_secs_txtView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/black"
+        android:text="(s)"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/color_secs_editText"
+        app:layout_constraintTop_toBottomOf="@+id/black_secs_txtView" />
+
+    <TextView
+        android:id="@+id/color_msecs_txtView"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/black"
+        android:text="(ms)"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/black_msecs_editText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/black_msecs_editText"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/black_secs_txtView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/black_msecs_txtView"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/black"
+        android:text="(ms)"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/color_msecs_editText"
+        app:layout_constraintTop_toBottomOf="@+id/color_msecs_txtView" />
+
+    <TextView
+        android:id="@+id/black_secs_txtView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/black"
+        android:text="(s)"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/black_secs_editText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/black_secs_editText"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/time_black_txtView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time_black_txtView"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/black"
+        android:text="Time Black:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button"
+        android:onClick="onClickButton"
+        android:text="OK"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/RGB_txtView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color_G_txtView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

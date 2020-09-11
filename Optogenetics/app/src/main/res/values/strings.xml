@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">flies optogenetics</string>
+
+
+    <string-array name="shape_spinner">
+        <item>Rectangle</item>
+        <item>Circle</item>
+        <item>Picture</item>
+    </string-array>
+
+
+</resources>
